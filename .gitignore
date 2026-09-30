@@ -1,0 +1,81 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# uploaded CMS media — keep brand + numbered assets tracked;
+# large/generated admin uploads can still be ignored by pattern if needed.
+# Production (Vercel): FS is read-only — commit files under public/uploads and public/videos.
+# /public/uploads/service-*
+/public/uploads/hero-*
+# /public/uploads/about-*
+# /public/uploads/slide-*
+# /public/uploads/trusted-*
+# /public/uploads/team-*
+# /public/uploads/testimonial-*
+# /public/uploads/work-*
+/public/uploads/partner-*
+# Keep URL-only CMS mirrors tracked so production can seed Neon if empty.
+# /data/services.json
+# /data/works.json
+# /data/nav-services.json
+# Keep about/companies/service-slides JSON committed for Vercel (URL-only seed).
+/data/trusted-videos.json
+/data/jwt/admin-token.json
+/data/team-members.json
+/data/locations.json
+/data/contact-messages.json
+/data/life-sc.json
+/data/web-development.json
+/data/logo-design.json
+/data/ai-video.json
+/data/work-gallery-*.json
+/public/uploads/location-icon-*
+/public/uploads/brochure-*
+/public/uploads/life-*
+# /public/uploads/webdev-*  — track so production can serve committed URLs
+# /public/uploads/logo-design-*  — track so production can serve committed URLs
+/public/uploads/ai-video-*
+/public/uploads/work-uiux-*
+/public/uploads/work-graphic-*
+/public/uploads/work-smm-*
+# Legacy video folder (videos now use public/videos)
+/public/uploads/Video/
+/tmp/

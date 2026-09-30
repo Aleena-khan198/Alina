@@ -1,0 +1,41 @@
+{
+  "name": "company-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "db:setup": "node scripts/setup-neon.mjs",
+    "db:migrate": "node scripts/apply-migration.mjs",
+    "db:seed-services": "node scripts/seed-services-neon.mjs",
+    "db:seed-nav": "node scripts/seed-nav-services-neon.mjs",
+    "db:seed-service-pages": "node scripts/seed-service-pages-neon.mjs",
+    "db:seed-uploads": "node --env-file=.env.local scripts/seed-upload-urls-neon.mjs",
+    "db:seed-life": "node scripts/seed-life-neon.mjs",
+    "db:seed-about": "node scripts/seed-about-neon.mjs",
+    "db:seed-works": "node scripts/seed-works-neon.mjs",
+    "db:seed-home": "node scripts/seed-home-neon.mjs",
+    "db:export-works": "node scripts/export-works-json.mjs"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.1.0",
+    "aos": "^2.3.4",
+    "cloudinary": "^2.10.0",
+    "jose": "^6.2.5",
+    "leaflet": "^1.9.4",
+    "next": "16.2.11",
+    "nodemailer": "^9.0.3",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "uuid": "^14.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "dotenv": "^17.4.2",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.11",
+    "tailwindcss": "^4"
+  }
+}
